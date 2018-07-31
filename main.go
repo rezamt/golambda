@@ -13,12 +13,10 @@ var enClinetID string = os.Getenv("ClientID")
 var enClinetSecret string = os.Getenv("ClientSecret")
 
 
-var Subscription string
 var ClientID string
 var ClientSecret string
 
 func init() {
-	Subscription = decrypt(enSubscription)
 	ClientID = decrypt(enClinetID)
 	ClientSecret = decrypt(enClinetSecret)
 }
